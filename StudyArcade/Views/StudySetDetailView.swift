@@ -54,11 +54,11 @@ struct StudySetDetailView: View {
                 }
 
                 NavigationLink {
-                    TapGameView(studySet: studySet) { _ in }
+                    GameSelectionView(studySet: studySet)
                 } label: {
                     HStack {
                         Image(systemName: "gamecontroller.fill")
-                        Text("Play Tap Game")
+                        Text("Play Games")
                     }
                     .frame(maxWidth: .infinity)
                     .padding(12)
