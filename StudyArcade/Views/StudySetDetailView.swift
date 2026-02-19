@@ -5,6 +5,7 @@ struct StudySetDetailView: View {
     let studySet: StudySet
     @Environment(\.modelContext) var modelContext
     @State private var showingNewFlashcardSheet = false
+    @State private var showingGameSelection = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -53,9 +54,9 @@ struct StudySetDetailView: View {
                     .cornerRadius(8)
                 }
 
-                NavigationLink {
-                    GameSelectionView(studySet: studySet)
-                } label: {
+                Button(action: {
+                    showingGameSelection = true
+                }) {
                     HStack {
                         Image(systemName: "gamecontroller.fill")
                         Text("Play Games")
@@ -74,6 +75,9 @@ struct StudySetDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showingNewFlashcardSheet) {
             NewFlashcardView(studySet: studySet, isPresented: $showingNewFlashcardSheet)
+        }
+        .navigationDestination(isPresented: $showingGameSelection) {
+            GameSelectionView(studySet: studySet)
         }
     }
 }
