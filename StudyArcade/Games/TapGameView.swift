@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData
 
 struct TapGameView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var score = 0
     @State private var timeRemaining = 60
     @State private var isGameActive = true
@@ -147,6 +148,7 @@ struct TapGameView: View {
         gameTimer?.invalidate()
         isGameActive = false
         onGameEnd(score)
+        dismiss()
     }
 }
 
