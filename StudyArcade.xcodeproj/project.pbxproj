@@ -3,25 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		50001B1A2C3E5F0000000001 /* StudyArcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50001B192C3E5F0000000001 /* StudyArcadeApp.swift */; };
 		50001B1C2C3E5F0000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50001B1B2C3E5F0000000001 /* ContentView.swift */; };
-		50001B1E2C3E5F0100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50001B1D2C3E5F0100000001 /* Assets.xcassets */; };
-		50001B212C3E5F0100000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50001B202C3E5F0100000001 /* Preview Assets.xcassets */; };
-		50001B382C3E5F0100000001 /* StudyArcadeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50001B372C3E5F0100000001 /* StudyArcadeTests.swift */; };
+		5E5A424B2F46BB3000D9B8C9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */; };
+		5E5A424C2F46BB3000D9B8C9 /* GameWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A423F2F46BB3000D9B8C9 /* GameWrapper.swift */; };
+		5E5A424D2F46BB3000D9B8C9 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42422F46BB3000D9B8C9 /* Flashcard.swift */; };
+		5E5A424E2F46BB3000D9B8C9 /* StudySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42432F46BB3000D9B8C9 /* StudySet.swift */; };
+		5E5A424F2F46BB3000D9B8C9 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42442F46BB3000D9B8C9 /* UserProgress.swift */; };
+		5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */; };
+		5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */; };
+		5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50001B0F2C3E5F0000000001 /* StudyArcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyArcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50001B192C3E5F0000000001 /* StudyArcadeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyArcadeApp.swift; sourceTree = "<group>"; };
 		50001B1B2C3E5F0000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		50001B1D2C3E5F0100000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50001B202C3E5F0100000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50001B362C3E5F0100000001 /* StudyArcadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyArcadeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		50001B372C3E5F0100000001 /* StudyArcadeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyArcadeTests.swift; sourceTree = "<group>"; };
+		5E5A423F2F46BB3000D9B8C9 /* GameWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWrapper.swift; sourceTree = "<group>"; };
+		5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGameView.swift; sourceTree = "<group>"; };
+		5E5A42422F46BB3000D9B8C9 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		5E5A42432F46BB3000D9B8C9 /* StudySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySet.swift; sourceTree = "<group>"; };
+		5E5A42442F46BB3000D9B8C9 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
+		5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetDetailView.swift; sourceTree = "<group>"; };
+		5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5E5A42532F46BB6F00D9B8C9 /* Preview Content */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Preview Content"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		50001B0C2C3E5F0000000001 /* Frameworks */ = {
@@ -45,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				50001B182C3E5F0000000001 /* StudyArcade */,
-				50001B352C3E5F0100000001 /* StudyArcadeTests */,
 				50001B102C3E5F0000000001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,28 +76,51 @@
 		50001B182C3E5F0000000001 /* StudyArcade */ = {
 			isa = PBXGroup;
 			children = (
+				5E5A42532F46BB6F00D9B8C9 /* Preview Content */,
 				50001B192C3E5F0000000001 /* StudyArcadeApp.swift */,
 				50001B1B2C3E5F0000000001 /* ContentView.swift */,
-				50001B1D2C3E5F0100000001 /* Assets.xcassets */,
-				50001B1F2C3E5F0100000001 /* Preview Content */,
+				5E5A42412F46BB3000D9B8C9 /* Games */,
+				5E5A42452F46BB3000D9B8C9 /* Models */,
+				5E5A42472F46BB3000D9B8C9 /* Store */,
+				5E5A424A2F46BB3000D9B8C9 /* Views */,
 			);
 			path = StudyArcade;
 			sourceTree = "<group>";
 		};
-		50001B1F2C3E5F0100000001 /* Preview Content */ = {
+		5E5A42412F46BB3000D9B8C9 /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				50001B202C3E5F0100000001 /* Preview Assets.xcassets */,
+				5E5A423F2F46BB3000D9B8C9 /* GameWrapper.swift */,
+				5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */,
 			);
-			path = "Preview Content";
+			path = Games;
 			sourceTree = "<group>";
 		};
-		50001B352C3E5F0100000001 /* StudyArcadeTests */ = {
+		5E5A42452F46BB3000D9B8C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				50001B372C3E5F0100000001 /* StudyArcadeTests.swift */,
+				5E5A42422F46BB3000D9B8C9 /* Flashcard.swift */,
+				5E5A42432F46BB3000D9B8C9 /* StudySet.swift */,
+				5E5A42442F46BB3000D9B8C9 /* UserProgress.swift */,
 			);
-			path = StudyArcadeTests;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E5A42472F46BB3000D9B8C9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		5E5A424A2F46BB3000D9B8C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */,
+				5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +137,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5E5A42532F46BB6F00D9B8C9 /* Preview Content */,
 			);
 			name = StudyArcade;
 			productName = StudyArcade;
@@ -166,8 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50001B212C3E5F0100000001 /* Preview Assets.xcassets in Resources */,
-				50001B1E2C3E5F0100000001 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5A424B2F46BB3000D9B8C9 /* StoreManager.swift in Sources */,
+				5E5A424C2F46BB3000D9B8C9 /* GameWrapper.swift in Sources */,
+				5E5A424D2F46BB3000D9B8C9 /* Flashcard.swift in Sources */,
+				5E5A424E2F46BB3000D9B8C9 /* StudySet.swift in Sources */,
+				5E5A424F2F46BB3000D9B8C9 /* UserProgress.swift in Sources */,
+				5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */,
+				5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */,
+				5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */,
 				50001B1C2C3E5F0000000001 /* ContentView.swift in Sources */,
 				50001B1A2C3E5F0000000001 /* StudyArcadeApp.swift in Sources */,
 			);
@@ -194,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50001B382C3E5F0100000001 /* StudyArcadeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
