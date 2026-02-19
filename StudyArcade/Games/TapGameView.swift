@@ -160,6 +160,6 @@ struct TapTarget {
         Flashcard(setId: testSet.id, front: "Capital of France?", back: "Paris", difficulty: 1),
     ]
 
-    return TapGameView(studySet: testSet, onGameEnd: { _ in })
+    TapGameView(studySet: testSet, onGameEnd: { _ in })
         .modelContainer(container)
 }
