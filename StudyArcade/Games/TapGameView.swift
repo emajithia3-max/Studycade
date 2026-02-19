@@ -158,7 +158,7 @@ struct TapTarget {
 
 #Preview {
     let testSet = StudySet(title: "Test Set")
-    testSet.flashcards = [
+    let _ = testSet.flashcards = [
         Flashcard(setId: testSet.id, front: "What is 2+2?", back: "4", difficulty: 1),
         Flashcard(setId: testSet.id, front: "Capital of France?", back: "Paris", difficulty: 1),
     ]
