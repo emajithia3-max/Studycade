@@ -57,21 +57,15 @@ actor StoreManager: ObservableObject {
         }
     }
 
-    nonisolated private func updateSubscriptionStatus() async {
+    private func updateSubscriptionStatus() async {
         do {
-            if case .verified(let transaction) = try await Transaction.latest(of: proProductID) {
-                await MainActor.run {
-                    self.hasPro = true
-                }
+            if case .verified(let transaction) = try await Transaction.latest(for: proProductID) {
+                hasPro = true
             } else {
-                await MainActor.run {
-                    self.hasPro = false
-                }
+                hasPro = false
             }
         } catch {
-            await MainActor.run {
-                self.hasPro = false
-            }
+            hasPro = false
         }
     }
 
