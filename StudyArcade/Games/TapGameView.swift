@@ -14,6 +14,11 @@ struct TapGameView: View {
 
     private var gameWrapper: GameWrapper<AnyView>?
 
+    init(studySet: StudySet, onGameEnd: @escaping (Int) -> Void) {
+        self.studySet = studySet
+        self.onGameEnd = onGameEnd
+    }
+
     var body: some View {
         ZStack {
             LinearGradient(
