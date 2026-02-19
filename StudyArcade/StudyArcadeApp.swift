@@ -4,12 +4,10 @@ import SwiftData
 @main
 struct StudyArcadeApp: App {
     let modelContainer: ModelContainer
-    @StateObject private var storeManager = StoreManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(storeManager)
         }
         .modelContainer(modelContainer)
     }

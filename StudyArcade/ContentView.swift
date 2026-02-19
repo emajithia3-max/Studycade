@@ -5,11 +5,8 @@ struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @Query var studySets: [StudySet]
     @Query var userProgress: [UserProgress]
-    @EnvironmentObject var storeManager: StoreManager
 
     @State private var showingNewSetSheet = false
-    @State private var showingSelectedGame: UUID?
-    @State private var selectedStudySet: StudySet?
 
     var currentProgress: UserProgress {
         if let existing = userProgress.first {
@@ -84,30 +81,16 @@ struct ContentView: View {
                     }
                 }
 
-                VStack(spacing: 12) {
-                    Button(action: { showingNewSetSheet = true }) {
-                        HStack {
-                            Image(systemName: "plus.circle.fill")
-                            Text("New Study Set")
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(12)
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
+                Button(action: { showingNewSetSheet = true }) {
+                    HStack {
+                        Image(systemName: "plus.circle.fill")
+                        Text("New Study Set")
                     }
-
-                    NavigationLink(destination: SubscriptionView()) {
-                        HStack {
-                            Image(systemName: "crown.fill")
-                            Text("Upgrade to Pro")
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(12)
-                        .background(Color.yellow.opacity(0.2))
-                        .foregroundColor(.yellow)
-                        .cornerRadius(8)
-                    }
+                    .frame(maxWidth: .infinity)
+                    .padding(12)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
                 }
                 .padding(16)
             }
@@ -192,7 +175,6 @@ struct NewStudySetView: View {
 
     return ContentView()
         .modelContainer(container)
-        .environmentObject(StoreManager())
         .onAppear {
             container.mainContext.insert(previewSet)
             container.mainContext.insert(progress)

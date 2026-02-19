@@ -11,7 +11,6 @@ struct GameWrapper<Content: View>: View {
     @State private var showXPPopup = false
 
     @Environment(\.modelContext) var modelContext
-    @EnvironmentObject var storeManager: StoreManager
 
     let content: Content
     let onFlashcardAnswered: (Flashcard, Bool) -> Void
@@ -62,11 +61,6 @@ struct GameWrapper<Content: View>: View {
                 .background(Color.black.opacity(0.8))
                 .cornerRadius(16)
                 .transition(.scale.combined(with: .opacity))
-            }
-        }
-        .onReceive(Timer.publish(every: 0.016, on: .main, in: .common).autoconnect()) { _ in
-            if !isPaused && !showFlashcard {
-                // Game loop update
             }
         }
     }

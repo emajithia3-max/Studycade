@@ -2,6 +2,7 @@ import SwiftUI
 import SwiftData
 
 struct TapGameView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var score = 0
     @State private var timeRemaining = 60
     @State private var isGameActive = true
@@ -13,6 +14,11 @@ struct TapGameView: View {
     let onGameEnd: (Int) -> Void
 
     private var gameWrapper: GameWrapper<AnyView>?
+
+    init(studySet: StudySet, onGameEnd: @escaping (Int) -> Void) {
+        self.studySet = studySet
+        self.onGameEnd = onGameEnd
+    }
 
     var body: some View {
         ZStack {
@@ -142,6 +148,7 @@ struct TapGameView: View {
         gameTimer?.invalidate()
         isGameActive = false
         onGameEnd(score)
+        dismiss()
     }
 }
 
@@ -152,14 +159,17 @@ struct TapTarget {
 }
 
 #Preview {
-    let container = try! ModelContainer(for: StudySet.self, Flashcard.self, UserProgress.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
-
     let testSet = StudySet(title: "Test Set")
-    testSet.flashcards = [
+    let _ = testSet.flashcards = [
         Flashcard(setId: testSet.id, front: "What is 2+2?", back: "4", difficulty: 1),
         Flashcard(setId: testSet.id, front: "Capital of France?", back: "Paris", difficulty: 1),
     ]
 
-    return TapGameView(studySet: testSet, onGameEnd: { _ in })
+    let container = try! ModelContainer(
+        for: StudySet.self, Flashcard.self, UserProgress.self,
+        configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+    )
+
+    TapGameView(studySet: testSet, onGameEnd: { _ in })
         .modelContainer(container)
 }
