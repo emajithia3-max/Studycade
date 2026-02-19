@@ -8,6 +8,13 @@ final class UserProgress {
     var streak: Int = 0
     var lastPlayedAt: Date?
 
+    init(xp: Int = 0, level: Int = 1, streak: Int = 0, lastPlayedAt: Date? = nil) {
+        self.xp = xp
+        self.level = level
+        self.streak = streak
+        self.lastPlayedAt = lastPlayedAt
+    }
+
     var xpForNextLevel: Int {
         level * 100
     }
