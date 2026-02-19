@@ -152,7 +152,7 @@ struct SpaceBlasterGameView: View {
                         }
                     }
             )
-            .onTapGesture { location in
+            .onTapGesture {
                 if !gameOver && !flashcardActive { shoot() }
             }
             .onAppear {

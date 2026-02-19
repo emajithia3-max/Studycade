@@ -145,9 +145,9 @@ struct TileMergeGameView: View {
             }
         case .down:
             for c in 0..<4 {
-                let col = (0..<4).map { grid[$0][c] }.reversed() as [Int]
+                let col = Array((0..<4).map { grid[$0][c] }.reversed())
                 let result = mergeLine(col)
-                let reversed = result.line.reversed() as [Int]
+                let reversed = Array(result.line.reversed())
                 for r in 0..<4 { grid[r][c] = reversed[r] }
                 mergePoints += result.points
             }

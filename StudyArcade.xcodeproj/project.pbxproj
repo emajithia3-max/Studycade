@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		50001B1A2C3E5F0000000001 /* StudyArcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50001B192C3E5F0000000001 /* StudyArcadeApp.swift */; };
 		50001B1C2C3E5F0000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50001B1B2C3E5F0000000001 /* ContentView.swift */; };
-		5E5A424B2F46BB3000D9B8C9 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */; };
 		5E5A424C2F46BB3000D9B8C9 /* GameWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A423F2F46BB3000D9B8C9 /* GameWrapper.swift */; };
 		5E5A424D2F46BB3000D9B8C9 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42422F46BB3000D9B8C9 /* Flashcard.swift */; };
 		5E5A424E2F46BB3000D9B8C9 /* StudySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42432F46BB3000D9B8C9 /* StudySet.swift */; };
 		5E5A424F2F46BB3000D9B8C9 /* UserProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42442F46BB3000D9B8C9 /* UserProgress.swift */; };
 		5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */; };
-		5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */; };
 		5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */; };
 		5E5A426D2F4747C400D9B8C9 /* RhythmTapGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42632F4747C400D9B8C9 /* RhythmTapGameView.swift */; };
 		5E5A426E2F4747C400D9B8C9 /* TowerStackGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A426B2F4747C400D9B8C9 /* TowerStackGameView.swift */; };
@@ -54,9 +52,7 @@
 		5E5A42422F46BB3000D9B8C9 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		5E5A42432F46BB3000D9B8C9 /* StudySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySet.swift; sourceTree = "<group>"; };
 		5E5A42442F46BB3000D9B8C9 /* UserProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProgress.swift; sourceTree = "<group>"; };
-		5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetDetailView.swift; sourceTree = "<group>"; };
-		5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 		5E5A42542F4747C400D9B8C9 /* BlockDropGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDropGameView.swift; sourceTree = "<group>"; };
 		5E5A42552F4747C400D9B8C9 /* BrickBreakerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickBreakerGameView.swift; sourceTree = "<group>"; };
 		5E5A42562F4747C400D9B8C9 /* BubbleShooterGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShooterGameView.swift; sourceTree = "<group>"; };
@@ -131,7 +127,6 @@
 				50001B1B2C3E5F0000000001 /* ContentView.swift */,
 				5E5A42412F46BB3000D9B8C9 /* Games */,
 				5E5A42452F46BB3000D9B8C9 /* Models */,
-				5E5A42472F46BB3000D9B8C9 /* Store */,
 				5E5A424A2F46BB3000D9B8C9 /* Views */,
 			);
 			path = StudyArcade;
@@ -181,19 +176,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5E5A42472F46BB3000D9B8C9 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */,
-			);
-			path = Store;
-			sourceTree = "<group>";
-		};
 		5E5A424A2F46BB3000D9B8C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */,
-				5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5A424B2F46BB3000D9B8C9 /* StoreManager.swift in Sources */,
 				5E5A424C2F46BB3000D9B8C9 /* GameWrapper.swift in Sources */,
 				5E5A424D2F46BB3000D9B8C9 /* Flashcard.swift in Sources */,
 				5E5A424E2F46BB3000D9B8C9 /* StudySet.swift in Sources */,
@@ -329,7 +314,6 @@
 				5E5A42852F4747C400D9B8C9 /* MoleSmashGameView.swift in Sources */,
 				5E5A424F2F46BB3000D9B8C9 /* UserProgress.swift in Sources */,
 				5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */,
-				5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */,
 				5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */,
 				50001B1C2C3E5F0000000001 /* ContentView.swift in Sources */,
 				50001B1A2C3E5F0000000001 /* StudyArcadeApp.swift in Sources */,

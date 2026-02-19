@@ -96,11 +96,14 @@ struct BubbleShooterGameView: View {
                 // Tap to shoot at column
                 Color.clear
                     .contentShape(Rectangle())
-                    .onTapGesture { location in
-                        guard !gameOver && !flashcardActive else { return }
-                        let col = Int(location.x / (geo.size.width / CGFloat(cols)))
-                        shootAtColumn(min(max(col, 0), cols - 1))
-                    }
+                    .gesture(
+                        SpatialTapGesture()
+                            .onEnded { value in
+                                guard !gameOver && !flashcardActive else { return }
+                                let col = Int(value.location.x / (geo.size.width / CGFloat(cols)))
+                                shootAtColumn(min(max(col, 0), cols - 1))
+                            }
+                    )
 
                 if flashcardActive, let card = currentFlashcard {
                     Color.black.opacity(0.7).ignoresSafeArea()
