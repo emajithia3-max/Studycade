@@ -157,17 +157,17 @@ struct TapTarget {
 }
 
 #Preview {
-    @Previewable @State var testSet = StudySet(title: "Test Set")
+    let testSet = StudySet(title: "Test Set")
     testSet.flashcards = [
         Flashcard(setId: testSet.id, front: "What is 2+2?", back: "4", difficulty: 1),
         Flashcard(setId: testSet.id, front: "Capital of France?", back: "Paris", difficulty: 1),
     ]
 
+    let container = try! ModelContainer(
+        for: StudySet.self, Flashcard.self, UserProgress.self,
+        configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+    )
+
     TapGameView(studySet: testSet, onGameEnd: { _ in })
-        .modelContainer(
-            try! ModelContainer(
-                for: StudySet.self, Flashcard.self, UserProgress.self,
-                configurations: ModelConfiguration(isStoredInMemoryOnly: true)
-            )
-        )
+        .modelContainer(container)
 }
