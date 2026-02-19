@@ -17,6 +17,31 @@
 		5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */; };
 		5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */; };
 		5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */; };
+		AA00000100000000000000A1 /* GameSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000100000000000000B1 /* GameSelectionView.swift */; };
+		AA00000200000000000000A1 /* SliceStormGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000200000000000000B1 /* SliceStormGameView.swift */; };
+		AA00000300000000000000A1 /* TowerStackGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000300000000000000B1 /* TowerStackGameView.swift */; };
+		AA00000400000000000000A1 /* TileMergeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000400000000000000B1 /* TileMergeGameView.swift */; };
+		AA00000500000000000000A1 /* MoleSmashGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000500000000000000B1 /* MoleSmashGameView.swift */; };
+		AA00000600000000000000A1 /* FlapDashGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000600000000000000B1 /* FlapDashGameView.swift */; };
+		AA00000700000000000000A1 /* BlockDropGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000700000000000000B1 /* BlockDropGameView.swift */; };
+		AA00000800000000000000A1 /* SnakeGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000800000000000000B1 /* SnakeGameView.swift */; };
+		AA00000900000000000000A1 /* BrickBreakerGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00000900000000000000B1 /* BrickBreakerGameView.swift */; };
+		AA00001000000000000000A1 /* GemMatchGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001000000000000000B1 /* GemMatchGameView.swift */; };
+		AA00001100000000000000A1 /* StarCatcherGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001100000000000000B1 /* StarCatcherGameView.swift */; };
+		AA00001200000000000000A1 /* SpaceBlasterGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001200000000000000B1 /* SpaceBlasterGameView.swift */; };
+		AA00001300000000000000A1 /* BubbleShooterGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001300000000000000B1 /* BubbleShooterGameView.swift */; };
+		AA00001400000000000000A1 /* PatternPulseGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001400000000000000B1 /* PatternPulseGameView.swift */; };
+		AA00001500000000000000A1 /* ColorDashGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001500000000000000B1 /* ColorDashGameView.swift */; };
+		AA00001600000000000000A1 /* RhythmTapGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001600000000000000B1 /* RhythmTapGameView.swift */; };
+		AA00001700000000000000A1 /* PongRallyGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001700000000000000B1 /* PongRallyGameView.swift */; };
+		AA00001800000000000000A1 /* MazeRunnerGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001800000000000000B1 /* MazeRunnerGameView.swift */; };
+		AA00001900000000000000A1 /* GravityDashGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00001900000000000000B1 /* GravityDashGameView.swift */; };
+		AA00002000000000000000A1 /* WoodFitGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002000000000000000B1 /* WoodFitGameView.swift */; };
+		AA00002100000000000000A1 /* HexPuzzleGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002100000000000000B1 /* HexPuzzleGameView.swift */; };
+		AA00002200000000000000A1 /* LaneRunnerGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002200000000000000B1 /* LaneRunnerGameView.swift */; };
+		AA00002300000000000000A1 /* SkyJumpGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002300000000000000B1 /* SkyJumpGameView.swift */; };
+		AA00002400000000000000A1 /* CardClimberGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002400000000000000B1 /* CardClimberGameView.swift */; };
+		AA00002500000000000000A1 /* SpinWinGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002500000000000000B1 /* SpinWinGameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +57,31 @@
 		5E5A42462F46BB3000D9B8C9 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		5E5A42482F46BB3000D9B8C9 /* StudySetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySetDetailView.swift; sourceTree = "<group>"; };
 		5E5A42492F46BB3000D9B8C9 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		AA00000100000000000000B1 /* GameSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSelectionView.swift; sourceTree = "<group>"; };
+		AA00000200000000000000B1 /* SliceStormGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliceStormGameView.swift; sourceTree = "<group>"; };
+		AA00000300000000000000B1 /* TowerStackGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerStackGameView.swift; sourceTree = "<group>"; };
+		AA00000400000000000000B1 /* TileMergeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileMergeGameView.swift; sourceTree = "<group>"; };
+		AA00000500000000000000B1 /* MoleSmashGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleSmashGameView.swift; sourceTree = "<group>"; };
+		AA00000600000000000000B1 /* FlapDashGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlapDashGameView.swift; sourceTree = "<group>"; };
+		AA00000700000000000000B1 /* BlockDropGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDropGameView.swift; sourceTree = "<group>"; };
+		AA00000800000000000000B1 /* SnakeGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeGameView.swift; sourceTree = "<group>"; };
+		AA00000900000000000000B1 /* BrickBreakerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickBreakerGameView.swift; sourceTree = "<group>"; };
+		AA00001000000000000000B1 /* GemMatchGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemMatchGameView.swift; sourceTree = "<group>"; };
+		AA00001100000000000000B1 /* StarCatcherGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCatcherGameView.swift; sourceTree = "<group>"; };
+		AA00001200000000000000B1 /* SpaceBlasterGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceBlasterGameView.swift; sourceTree = "<group>"; };
+		AA00001300000000000000B1 /* BubbleShooterGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShooterGameView.swift; sourceTree = "<group>"; };
+		AA00001400000000000000B1 /* PatternPulseGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternPulseGameView.swift; sourceTree = "<group>"; };
+		AA00001500000000000000B1 /* ColorDashGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDashGameView.swift; sourceTree = "<group>"; };
+		AA00001600000000000000B1 /* RhythmTapGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmTapGameView.swift; sourceTree = "<group>"; };
+		AA00001700000000000000B1 /* PongRallyGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongRallyGameView.swift; sourceTree = "<group>"; };
+		AA00001800000000000000B1 /* MazeRunnerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeRunnerGameView.swift; sourceTree = "<group>"; };
+		AA00001900000000000000B1 /* GravityDashGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityDashGameView.swift; sourceTree = "<group>"; };
+		AA00002000000000000000B1 /* WoodFitGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodFitGameView.swift; sourceTree = "<group>"; };
+		AA00002100000000000000B1 /* HexPuzzleGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexPuzzleGameView.swift; sourceTree = "<group>"; };
+		AA00002200000000000000B1 /* LaneRunnerGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaneRunnerGameView.swift; sourceTree = "<group>"; };
+		AA00002300000000000000B1 /* SkyJumpGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyJumpGameView.swift; sourceTree = "<group>"; };
+		AA00002400000000000000B1 /* CardClimberGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClimberGameView.swift; sourceTree = "<group>"; };
+		AA00002500000000000000B1 /* SpinWinGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinWinGameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -92,6 +142,31 @@
 			children = (
 				5E5A423F2F46BB3000D9B8C9 /* GameWrapper.swift */,
 				5E5A42402F46BB3000D9B8C9 /* TapGameView.swift */,
+				AA00000100000000000000B1 /* GameSelectionView.swift */,
+				AA00000200000000000000B1 /* SliceStormGameView.swift */,
+				AA00000300000000000000B1 /* TowerStackGameView.swift */,
+				AA00000400000000000000B1 /* TileMergeGameView.swift */,
+				AA00000500000000000000B1 /* MoleSmashGameView.swift */,
+				AA00000600000000000000B1 /* FlapDashGameView.swift */,
+				AA00000700000000000000B1 /* BlockDropGameView.swift */,
+				AA00000800000000000000B1 /* SnakeGameView.swift */,
+				AA00000900000000000000B1 /* BrickBreakerGameView.swift */,
+				AA00001000000000000000B1 /* GemMatchGameView.swift */,
+				AA00001100000000000000B1 /* StarCatcherGameView.swift */,
+				AA00001200000000000000B1 /* SpaceBlasterGameView.swift */,
+				AA00001300000000000000B1 /* BubbleShooterGameView.swift */,
+				AA00001400000000000000B1 /* PatternPulseGameView.swift */,
+				AA00001500000000000000B1 /* ColorDashGameView.swift */,
+				AA00001600000000000000B1 /* RhythmTapGameView.swift */,
+				AA00001700000000000000B1 /* PongRallyGameView.swift */,
+				AA00001800000000000000B1 /* MazeRunnerGameView.swift */,
+				AA00001900000000000000B1 /* GravityDashGameView.swift */,
+				AA00002000000000000000B1 /* WoodFitGameView.swift */,
+				AA00002100000000000000B1 /* HexPuzzleGameView.swift */,
+				AA00002200000000000000B1 /* LaneRunnerGameView.swift */,
+				AA00002300000000000000B1 /* SkyJumpGameView.swift */,
+				AA00002400000000000000B1 /* CardClimberGameView.swift */,
+				AA00002500000000000000B1 /* SpinWinGameView.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -231,6 +306,31 @@
 				5E5A42502F46BB3000D9B8C9 /* StudySetDetailView.swift in Sources */,
 				5E5A42512F46BB3000D9B8C9 /* SubscriptionView.swift in Sources */,
 				5E5A42522F46BB3000D9B8C9 /* TapGameView.swift in Sources */,
+				AA00000100000000000000A1 /* GameSelectionView.swift in Sources */,
+				AA00000200000000000000A1 /* SliceStormGameView.swift in Sources */,
+				AA00000300000000000000A1 /* TowerStackGameView.swift in Sources */,
+				AA00000400000000000000A1 /* TileMergeGameView.swift in Sources */,
+				AA00000500000000000000A1 /* MoleSmashGameView.swift in Sources */,
+				AA00000600000000000000A1 /* FlapDashGameView.swift in Sources */,
+				AA00000700000000000000A1 /* BlockDropGameView.swift in Sources */,
+				AA00000800000000000000A1 /* SnakeGameView.swift in Sources */,
+				AA00000900000000000000A1 /* BrickBreakerGameView.swift in Sources */,
+				AA00001000000000000000A1 /* GemMatchGameView.swift in Sources */,
+				AA00001100000000000000A1 /* StarCatcherGameView.swift in Sources */,
+				AA00001200000000000000A1 /* SpaceBlasterGameView.swift in Sources */,
+				AA00001300000000000000A1 /* BubbleShooterGameView.swift in Sources */,
+				AA00001400000000000000A1 /* PatternPulseGameView.swift in Sources */,
+				AA00001500000000000000A1 /* ColorDashGameView.swift in Sources */,
+				AA00001600000000000000A1 /* RhythmTapGameView.swift in Sources */,
+				AA00001700000000000000A1 /* PongRallyGameView.swift in Sources */,
+				AA00001800000000000000A1 /* MazeRunnerGameView.swift in Sources */,
+				AA00001900000000000000A1 /* GravityDashGameView.swift in Sources */,
+				AA00002000000000000000A1 /* WoodFitGameView.swift in Sources */,
+				AA00002100000000000000A1 /* HexPuzzleGameView.swift in Sources */,
+				AA00002200000000000000A1 /* LaneRunnerGameView.swift in Sources */,
+				AA00002300000000000000A1 /* SkyJumpGameView.swift in Sources */,
+				AA00002400000000000000A1 /* CardClimberGameView.swift in Sources */,
+				AA00002500000000000000A1 /* SpinWinGameView.swift in Sources */,
 				50001B1C2C3E5F0000000001 /* ContentView.swift in Sources */,
 				50001B1A2C3E5F0000000001 /* StudyArcadeApp.swift in Sources */,
 			);

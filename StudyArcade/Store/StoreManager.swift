@@ -1,13 +1,14 @@
 import StoreKit
 import Foundation
 
-actor StoreManager: ObservableObject {
+@MainActor
+class StoreManager: ObservableObject {
     @Published private(set) var subscriptionGroupStatus: RenewalState = .unknown
     @Published private(set) var hasPro: Bool = false
 
     private var updateListenerTask: Task<Void, Never>? = nil
 
-    nonisolated private let proProductID = "com.studyarcade.pro.monthly"
+    private let proProductID = "com.studyarcade.pro.monthly"
 
     init() {
         updateListenerTask = listenForTransactions()
@@ -59,7 +60,7 @@ actor StoreManager: ObservableObject {
 
     private func updateSubscriptionStatus() async {
         do {
-            if case .verified(let transaction) = try await Transaction.latest(for: proProductID) {
+            if case .verified(_) = try await Transaction.latest(for: proProductID) {
                 hasPro = true
             } else {
                 hasPro = false
@@ -69,16 +70,17 @@ actor StoreManager: ObservableObject {
         }
     }
 
+    // No subscription gates - everything is free for now
     var canCreateMoreStudySets: Bool {
-        hasPro
+        true
     }
 
     var dailyXPLimit: Int {
-        hasPro ? .max : 500
+        .max
     }
 
     var canPlayAllGames: Bool {
-        hasPro
+        true
     }
 }
 
